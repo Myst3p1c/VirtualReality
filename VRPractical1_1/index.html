@@ -3,13 +3,30 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-box radius 
-    <a-scene>
-      <a-sphere position="0 4 -5" radius="1.25" color="green"></a-sphere>
-      <a-sphere position="-1 3 -5" radius="1.25" color="green"></a-sphere>
-      <a-sphere position="1 3 -5" radius="1.25" color="green"></a-sphere>
-      <a-cylinder position="0 0.75 -5" radius="0.5" height="3.5"color="brown"></a-cylinder>
+   <a-entity id="flintstones-car" position="0 0.5 -5" rotation="0 45 0" scale="1 1 1">
 
+  <!-- Car Body (stone colored) -->
+  <a-box position="0 0.5 0" depth="3" height="1" width="4" color="#c2b280"></a-box>
+
+  <!-- Wheels (cylinders as logs) -->
+  <a-cylinder position="-1.5 0 1.5" radius="0.75" height="0.5" rotation="90 0 0" color="#654321"></a-cylinder>
+  <a-cylinder position="1.5 0 1.5" radius="0.75" height="0.5" rotation="90 0 0" color="#654321"></a-cylinder>
+  <a-cylinder position="-1.5 0 -1.5" radius="0.75" height="0.5" rotation="90 0 0" color="#654321"></a-cylinder>
+  <a-cylinder position="1.5 0 -1.5" radius="0.75" height="0.5" rotation="90 0 0" color="#654321"></a-cylinder>
+
+  <!-- Canopy supports (wood posts) -->
+  <a-cylinder position="-1 1 1" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
+  <a-cylinder position="1 1 1" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
+  <a-cylinder position="-1 1 -1" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
+  <a-cylinder position="1 1 -1" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
+
+  <!-- Canopy top (cloth approximation) -->
+  <a-box position="0 1.75 0" depth="2.5" height="0.1" width="2.5" color="#eee"></a-box>
+
+  <!-- Steering wheel (simple circle as bone) -->
+  <a-ring position="0.5 1 0" radius-inner="0.1" radius-outer="0.15" rotation="0 90 0" color="#D2B48C"></a-ring>
+
+</a-entity>
      
       <a-plane position="0 0 -4" rotation="-90 0 0" width="50" height="50"src="sand.jpg"repeat="10 10"></a-plane>
 
