@@ -3,35 +3,48 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   </head>
   <body>
+  <a-scene>
    <a-entity id="flintstones-car" position="0 0.5 -5" rotation="0 45 0" scale="1 1 1">
 
-  <!-- Car Body (stone colored) -->
-  <a-box position="0 0.5 0" depth="3" height="1" width="4" color="#c2b280"></a-box>
+  <!-- Stone slab car body -->
+  <a-box position="0 0.5 0" depth="4" height="1.2" width="5" color="#b59d6e" material="roughness:0.85; metalness:0.1"></a-box>
 
-  <!-- Wheels (cylinders as logs) -->
-  <a-cylinder position="-1.5 0 1.5" radius="0.75" height="0.5" rotation="90 0 0" color="#654321"></a-cylinder>
-  <a-cylinder position="1.5 0 1.5" radius="0.75" height="0.5" rotation="90 0 0" color="#654321"></a-cylinder>
-  <a-cylinder position="-1.5 0 -1.5" radius="0.75" height="0.5" rotation="90 0 0" color="#654321"></a-cylinder>
-  <a-cylinder position="1.5 0 -1.5" radius="0.75" height="0.5" rotation="90 0 0" color="#654321"></a-cylinder>
+  <!-- Horizontal wooden logs (axles) -->
+  <a-cylinder src="bark_texture.png" color="brown" position="0 0 1.85" radius="0.5" height="5.2" rotation="0 0 90" color="#6b4c23"></a-cylinder>
+  <a-cylinder src="bark_texture.png" color="brown"position="0 0 -1.85" radius="0.5" height="5.2" rotation="0 0 90" color="#6b4c23"></a-cylinder>
 
-  <!-- Canopy supports (wood posts) -->
-  <a-cylinder position="-1 1 1" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
-  <a-cylinder position="1 1 1" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
-  <a-cylinder position="-1 1 -1" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
-  <a-cylinder position="1 1 -1" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
+  <!-- Four stone wheels attached to the logs -->
+  <a-cylinder src="stone_texture.png" color="grey" position="-2.6 0 0" radius="0.9" height="5" rotation="90 0 0" color="#8c7b63" material="roughness:0.9"></a-cylinder>
+  <a-cylinder src="stone_texture.png" color="grey" position="2.6 0 -0" radius="0.9" height="5" rotation="90 0 0" color="#8c7b63" material="roughness:0.9"></a-cylinder>
 
-  <!-- Canopy top (cloth approximation) -->
-  <a-box position="0 1.75 0" depth="2.5" height="0.1" width="2.5" color="#eee"></a-box>
+  <!-- Wooden canopy supports -->
+  <a-cylinder src="bark_texture.png" color="brown" position="-1.3 1.6 1.7" radius="0.12" height="2" color="#8B4513"></a-cylinder>
+  <a-cylinder src="bark_texture.png" color="brown" position="1.3 1.6 1.7" radius="0.12" height="2" color="#8B4513"></a-cylinder>
+  <a-cylinder src="bark_texture.png" color="brown" position="-1.3 1.6 -1.7" radius="0.12" height="2" color="#8B4513"></a-cylinder>
+  <a-cylinder src="bark_texture.png" color="brown" position="1.3 1.6 -1.7" radius="0.12" height="2" color="#8B4513"></a-cylinder>
 
-  <!-- Steering wheel (simple circle as bone) -->
-  <a-ring position="0.5 1 0" radius-inner="0.1" radius-outer="0.15" rotation="0 90 0" color="#D2B48C"></a-ring>
+  <!-- Canopy roof (cloth, slightly slanted) -->
+  <a-plane position="0 2.8 0" width="3.8" height="3" rotation="-30 0 0" color="#f2eee6" opacity="0.9"></a-plane>
+
+  <!-- Stone slab seats -->
+  <a-box position="-1 1.1 -0.8" width="1.4" height="0.5" depth="1" color="#9f8e7a" material="roughness:0.95"></a-box>
+  <a-box position="1 1.1 -0.8" width="1.4" height="0.5" depth="1" color="#9f8e7a" material="roughness:0.95"></a-box>
+
+  <!-- Bone-shaped steering wheel -->
+  <a-ring position="0.5 1.8 0" radius-inner="0.1" radius-outer="0.17" rotation="0 90 0" color="#e6dcc5"></a-ring>
+  <a-cylinder position="0.5 1.8 0" radius="0.07" height="0.3" rotation="0 0 45" color="#e6dcc5"></a-cylinder>
+
+  <!-- Foot pedals -->
+  <a-box position="-1 0.35 1.9" width="0.45" height="0.1" depth="0.35" color="#a67c33"></a-box>
+  <a-box position="1 0.35 1.9" width="0.45" height="0.1" depth="0.35" color="#a67c33"></a-box>
 
 </a-entity>
+
      
       <a-plane position="0 0 -4" rotation="-90 0 0" width="50" height="50"src="sand.jpg"repeat="10 10"></a-plane>
 
 
-      <a-sky  src="flintstones_backround.png"></a-sky>
+      <a-sky color="blue"></a-sky>
     </a-scene>
   </body>
 </html>
