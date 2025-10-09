@@ -27,6 +27,104 @@
       <!-- Road -->
       <a-box src="#snowy asphalt" position="0 0.01 -20" depth="100" height="0.01" width="4" repeat="1 100"></a-box>
 
+      <!-- === MOUNTAINS (LEFT & RIGHT SIDES) === -->
+      <a-cone position="-17 3 0" radius-bottom="8" height="8" color="#555"></a-cone>
+      <a-cone position="-17 7 -20" radius-bottom="2.4" height="3.5" color="white"></a-cone>
+
+      <a-cone position="-17 2 10" radius-bottom="8" height="15" color="#666"></a-cone>
+      <a-cone position="-17 6 -10" radius-bottom="2.4" height="3.5" color="white"></a-cone>
+      <a-cone position="-17 2 -10" radius-bottom="8" height="10" color="#666"></a-cone>
+      <a-cone position="-17 8 10" radius-bottom="2" height="3.5" color="white"></a-cone>
+      <a-cone position="-17 2 -20" radius-bottom="9" height="13" color="#666"></a-cone>
+
+
+      <a-cone position="12 1 5" radius-bottom="5" height="4" color="#555"></a-cone>
+      <a-cone position="12 1 15" radius-bottom="6" height="4.5" color="#666"></a-cone>
+
+
+      <!--Street lamps-->
+      <a-entity position="3 0 -2">
+    <a-cylinder position="0 1.5 0" radius="0.05" height="3" color="#666"></a-cylinder>
+    <a-box position="0 3.1 0" depth="0.2" height="0.2" width="0.4" color="#CFFF04"></a-box>
+  </a-entity>
+
+    <a-entity position="-3 0 -2">
+    <a-cylinder position="0 1.5 0" radius="0.05" height="3" color="#666"></a-cylinder>
+    <a-box position="0 3.1 0" depth="0.2" height="0.2" width="0.4" color="#CFFF04"></a-box>
+  </a-entity>
+
+  <a-entity position="-3 0 -17">
+    <a-cylinder position="0 1.5 0" radius="0.05" height="3" color="#666"></a-cylinder>
+    <a-box position="0 3.1 0" depth="0.2" height="0.2" width="0.4" color="#CFFF04"></a-box>
+  </a-entity>
+
+  <a-entity position="3 0 -17">
+    <a-cylinder position="0 1.5 0" radius="0.05" height="3" color="#666"></a-cylinder>
+    <a-box position="0 3.1 0" depth="0.2" height="0.2" width="0.4" color="#CFFF04"></a-box>
+  </a-entity>
+
+  <a-entity position="3 0 -35">
+    <a-cylinder position="0 1.5 0" radius="0.05" height="3" color="#666"></a-cylinder>
+    <a-box position="0 3.1 0" depth="0.2" height="0.2" width="0.4" color="#CFFF04"></a-box>
+  </a-entity>
+
+  <a-entity position="-3 0 -35">
+    <a-cylinder position="0 1.5 0" radius="0.05" height="3" color="#666"></a-cylinder>
+    <a-box position="0 3.1 0" depth="0.2" height="0.2" width="0.4" color="#CFFF04"></a-box>
+  </a-entity>
+
+
+      <a-entity id="snowman" position="0 0 -10" rotation+"">
+        <!-- Body -->
+        <a-sphere position="3 0.25 -5" radius="0.5" color="white"></a-sphere>
+        <a-sphere position="3 0.7 -5" radius="0.4" color="white"></a-sphere>
+        <a-sphere position="3 1.1 -5" radius=".3" color="white"></a-sphere>
+        <!-- Eyes -->
+        <a-sphere position="2.8 1.2 -4.8" radius=".06" color="black"></a-sphere>
+        <a-sphere position="2.75 1.2 -5.1" radius=".06" color="black"></a-sphere>
+        <!--Buttons-->
+        <a-sphere position="2.6 0.7 -4.9" radius=".04" color="black"></a-sphere>
+        <a-sphere position="2.56 0.5 -4.9" radius=".04" color="black"></a-sphere>
+        <!-- Nose and Arms -->
+        <a-cone position="2.57 1.1 -4.92"  rotation="90 -75 0" color="tomato" height="0.3" radius-bottom=".06" radius-top="0.01"></a-cone>
+        <a-cylinder position="3 0.7 -5.5" color="#A52A2A" rotation="0 90 60" height="0.5" radius="0.05"></a-cylinder>
+        <a-cylinder position="3 1 -4.6" color="#A52A2A" rotation="180 90 -60" height="0.5" radius="0.05"></a-cylinder>
+      </a-entity>
+
+      <a-entity id="snowman" position="0 0 -20" rotation+"">
+        <!-- Body -->
+        <a-sphere position="3 0.25 -5" radius="0.5" color="white"></a-sphere>
+        <a-sphere position="3 0.7 -5" radius="0.4" color="white"></a-sphere>
+        <a-sphere position="3 1.1 -5" radius=".3" color="white"></a-sphere>
+        <!-- Eyes -->
+        <a-sphere position="2.8 1.2 -4.8" radius=".06" color="black"></a-sphere>
+        <a-sphere position="2.75 1.2 -5.1" radius=".06" color="black"></a-sphere>
+        <!--Buttons-->
+        <a-sphere position="2.6 0.7 -4.9" radius=".04" color="black"></a-sphere>
+        <a-sphere position="2.56 0.5 -4.9" radius=".04" color="black"></a-sphere>
+        <!-- Nose and Arms -->
+        <a-cone position="2.57 1.1 -4.92"  rotation="90 -75 0" color="tomato" height="0.3" radius-bottom=".06" radius-top="0.01"></a-cone>
+        <a-cylinder position="3 0.7 -5.5" color="#A52A2A" rotation="0 90 60" height="0.5" radius="0.05"></a-cylinder>
+        <a-cylinder position="3 1 -4.6" color="#A52A2A" rotation="180 90 -60" height="0.5" radius="0.05"></a-cylinder>
+      </a-entity>
+
+      <a-entity id="snowman" position="2 0 -3" rotation="0 90 0">
+        <!-- Body -->
+        <a-sphere position="3 0.25 -5" radius="0.5" color="white"></a-sphere>
+        <a-sphere position="3 0.7 -5" radius="0.4" color="white"></a-sphere>
+        <a-sphere position="3 1.1 -5" radius=".3" color="white"></a-sphere>
+        <!-- Eyes -->
+        <a-sphere position="2.8 1.2 -4.8" radius=".06" color="black"></a-sphere>
+        <a-sphere position="2.75 1.2 -5.1" radius=".06" color="black"></a-sphere>
+        <!--Buttons-->
+        <a-sphere position="2.6 0.7 -4.9" radius=".04" color="black"></a-sphere>
+        <a-sphere position="2.56 0.5 -4.9" radius=".04" color="black"></a-sphere>
+        <!-- Nose and Arms -->
+        <a-cone position="2.57 1.1 -4.92"  rotation="90 -75 0" color="tomato" height="0.3" radius-bottom=".06" radius-top="0.01"></a-cone>
+        <a-cylinder position="3 0.7 -5.5" color="#A52A2A" rotation="0 90 60" height="0.5" radius="0.05"></a-cylinder>
+        <a-cylinder position="3 1 -4.6" color="#A52A2A" rotation="180 90 -60" height="0.5" radius="0.05"></a-cylinder>
+      </a-entity>
+
       <!-- Houses -->
 
       <!-- House 1 (Left side, facing right) -->
