@@ -39,14 +39,14 @@ class Rocket{
             layer.setAttribute("color", "white");
             layer.setAttribute("position",{x:0, y:3, z:0});
             layer.setAttribute("radius","1.02");
-            layer.setAttribute("height","5")
+            layer.setAttribute("height","5");
             this.obj.append( layer );
 
         let layer2 = document.createElement("a-cylinder");
             layer2.setAttribute("color", "#8A7F80");
             layer2.setAttribute("position",{x:0, y:-3, z:0});
             layer2.setAttribute("radius","1.5");
-            layer2.setAttribute("height","7")
+            layer2.setAttribute("height","7");
             this.obj.append( layer2 );
 
         let layer3 = document.createElement("a-cylinder");
@@ -60,28 +60,28 @@ class Rocket{
             layer4.setAttribute("color", "#8A7F80");
             layer4.setAttribute("position",{x:-1, y:-3, z:-1});
             layer4.setAttribute("radius","0.5");
-            layer4.setAttribute("height","4")
+            layer4.setAttribute("height","4");
             this.obj.append( layer4 );
 
         let layer5 = document.createElement("a-cylinder");
             layer5.setAttribute("color", "#8A7F80");
             layer5.setAttribute("position",{x:-1, y:-3, z:1});
             layer5.setAttribute("radius","0.5");
-            layer5.setAttribute("height","4")
+            layer5.setAttribute("height","4");
             this.obj.append( layer5 );
 
         let layer6 = document.createElement("a-cylinder");
             layer6.setAttribute("color", "#8A7F80");
             layer6.setAttribute("position",{x:-1, y:-3, z:1});
             layer6.setAttribute("radius","0.5");
-            layer6.setAttribute("height","4")
+            layer6.setAttribute("height","4");
             this.obj.append( layer6 );
 
         let layer7 = document.createElement("a-cylinder");
             layer7.setAttribute("color", "gray");
             layer7.setAttribute("position",{x:0, y:-5, z:0});
             layer7.setAttribute("radius","0.5");
-            layer7.setAttribute("height","4")
+            layer7.setAttribute("height","4");
             this.obj.append( layer7 );
 
         let tip2 = document.createElement("a-cone");
@@ -139,7 +139,7 @@ class Rocket{
             fire2.setAttribute("color", "orange");
             fire2.setAttribute("position",{x:0, y:-8, z:0});
             fire2.setAttribute("radius","0.8");
-            fire2.setAttribute("opacity","0.7")
+            fire2.setAttribute("opacity","0.7");
             this.obj.append( fire2 );
 
         let fire3 = document.createElement("a-cone");
@@ -147,7 +147,7 @@ class Rocket{
             fire3.setAttribute("radius-bottom","0.5");
             fire3.setAttribute("radius-top","0");
             fire3.setAttribute("position",{x:1, y:-6.5, z:1});
-            fire3.setAttribute("opacity","0.7")
+            fire3.setAttribute("opacity","0.7");
             fire3.setAttribute("rotaion",{x:-180, y:0, z:0});
             fire5.setAttribute("height","4");
             this.obj.append( fire3 );
@@ -157,7 +157,7 @@ class Rocket{
             fire4.setAttribute("radius-bottom","0.5");
             fire4.setAttribute("radius-top","0");
             fire4.setAttribute("position",{x:-1, y:-6.5, z:-1});
-            fire4.setAttribute("opacity","0.7")
+            fire4.setAttribute("opacity","0.7");
             fire4.setAttribute("rotaion",{x:-180, y:0, z:0});
             fire5.setAttribute("height","4");
             this.obj.append( fire4 );
@@ -167,7 +167,7 @@ class Rocket{
             fire5.setAttribute("radius-bottom","0.5");
             fire5.setAttribute("radius-top","0");
             fire5.setAttribute("position",{x:1, y:-6.5, z:-1});
-            fire5.setAttribute("opacity","0.7")
+            fire5.setAttribute("opacity","0.7");
             fire5.setAttribute("rotaion",{x:-180, y:0, z:0});
             fire5.setAttribute("height","4");
             this.obj.append( fire5 );
@@ -177,7 +177,7 @@ class Rocket{
             fire6.setAttribute("radius-bottom","0.5");
             fire6.setAttribute("radius-top","0");
             fire6.setAttribute("position",{x:-1, y:-6.5, z:1});
-            fire6.setAttribute("opacity","0.7")
+            fire6.setAttribute("opacity","0.7");
             fire6.setAttribute("rotaion",{x:-180, y:0, z:0});
             fire6.setAttribute("height","4");
             this.obj.append( fire6 );
