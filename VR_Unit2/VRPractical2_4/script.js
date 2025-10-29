@@ -1,23 +1,46 @@
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
-let scene, rockets = [];
+let scene, rockets = [], ufos = [], tree = [], house = [];
 
-window.addEventListener("DOMContentLoaded",function() {
+window.addEventListener("DOMContentLoaded", function() {
   scene = document.querySelector("a-scene"); 
-  rocket = new Rocket(3, -2 , 4);
+
   for(let i = 0; i < 100; i++){
-    let x = rnd(-100,100);
-    let z = rnd(-100,100);
+    let x = rnd(-100, 100);
+    let z = rnd(-100, 100);
     let rocket = new Rocket(x, -3, z);
     rockets.push(rocket);
   }
-  loop();
-})
 
-function loop(){
+  for(let i = 0; i < 20; i++){
+    let x = rnd(-100, 100);
+    let z = rnd(-100, 100);
+    let y = rnd(30, 50); 
+    let ufo = new UFO(x, y, z);
+    ufos.push(ufo);
+  }
+
+  for(let i = 0; i < 300; i++){
+    let x = rnd(-100,100);
+    let z = rnd(-100,100);
+    let tree = new Tree(x, -13 , z);
+  }
+
+   for(let i = 0; i < 300; i++){
+    let x = rnd(-100,100);
+    let z = rnd(-100,100);
+    let house = new House(x, -13 , z);
+  }
+  loop();
+});
+
+function loop() {
   for(let rocket of rockets){
     rocket.fly();
   }
-  // rocket.fly();
-  
-  window.requestAnimationFrame( loop );
+
+  for(let ufo of ufos){
+    ufo.invade();
+  }
+
+  window.requestAnimationFrame(loop);
 }

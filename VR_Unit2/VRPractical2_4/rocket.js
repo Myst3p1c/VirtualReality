@@ -1,9 +1,9 @@
 class Rocket{
     constructor(x,y,z){
         this.x = x;
-        this.x = y;
-        this.x = z;
-        this.dy = 0.01;
+        this.y = y;
+        this.z = z;
+        this.dy = 0.01 + Math.random() * 0.02;
         this.obj = document.createElement("a-entity");
 
             let body = document.createElement("a-cylinder");
