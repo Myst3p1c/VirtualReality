@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded",function() {
   for(let i = 0; i < 100; i++){
     let x = rnd(-100,100);
     let z = rnd(-100,100);
-    let rocket = new Rockets(x, -3, z);
+    let rocket = new Rocket(x, -3, z);
     rockets.push(rocket);
   }
   loop();

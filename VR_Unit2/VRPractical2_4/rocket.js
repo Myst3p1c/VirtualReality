@@ -22,17 +22,18 @@ class Rocket{
             this.obj.append( tip );
             
             let cross = document.createElement("a-sphere");
-            cross.setAttribute("color", "#d3d3d3");
+            cross.setAttribute("color", "red");
             cross.setAttribute("position","0 2 0");
             cross.setAttribute("scale","0.5 2 0");
             cross.setAttribute("radius","3");
             this.obj.append(cross);
 
             let cross2 = document.createElement("a-sphere");
-            cross2.setAttribute("color", "#d3d3d3");
+            cross2.setAttribute("color", "red");
             cross2.setAttribute("position","0 2 0");
             cross2.setAttribute("scale","0 2 0.5");
             cross2.setAttribute("radius","3");
+            cross2.setAttribute("rotation","0 45 0");
             this.obj.append(cross);
 
             let layer = document.createElement("a-cylinder");
@@ -72,7 +73,7 @@ class Rocket{
 
             let layer6 = document.createElement("a-cylinder");
             layer6.setAttribute("color", "#8A7F80");
-            layer6.setAttribute("position","-1 -3 1");
+            layer6.setAttribute("position","1 -3 -1");
             layer6.setAttribute("radius","0.5");
             layer6.setAttribute("height","4");
             this.obj.append( layer6 );
@@ -85,28 +86,28 @@ class Rocket{
             this.obj.append( layer7 );
 
             let tip2 = document.createElement("a-cone");
-            tip2.setAttribute("color","#8A7F80");
+            tip2.setAttribute("color","white");
             tip2.setAttribute("radius-bottom","0.5");
             tip2.setAttribute("radius-top","0");
             tip2.setAttribute("position","1 -0.5 1");
             this.obj.append( tip2 );
 
             let tip3 = document.createElement("a-cone");
-            tip3.setAttribute("color","#8A7F80");
+            tip3.setAttribute("color","white");
             tip3.setAttribute("radius-bottom","0.5");
             tip3.setAttribute("radius-top","0");
             tip3.setAttribute("position","1 -0.5 -1");
             this.obj.append( tip3 );
         
             let tip4 = document.createElement("a-cone");
-            tip4.setAttribute("color","#8A7F80");
+            tip4.setAttribute("color","white");
             tip4.setAttribute("radius-bottom","0.5");
             tip4.setAttribute("radius-top","0");
             tip4.setAttribute("position","-1 -0.5 -1");
             this.obj.append( tip4 );
 
             let tip5 = document.createElement("a-cone");
-            tip5.setAttribute("color","#8A7F80");
+            tip5.setAttribute("color","white");
             tip5.setAttribute("radius-bottom","0.5");
             tip5.setAttribute("radius-top","0");
             tip5.setAttribute("position","-1 -0.5 1");
@@ -119,6 +120,13 @@ class Rocket{
             dividor.setAttribute("position","0 1 0");
             this.obj.append( dividor );
 
+            let dividor2 = document.createElement("a-cone");
+            dividor2.setAttribute("color","black");
+            dividor2.setAttribute("radius-bottom","1");
+            dividor2.setAttribute("radius-top","0.35");
+            dividor2.setAttribute("position","0 6 0");
+            this.obj.append( dividor2 );
+
             let jet = document.createElement("a-cone");
             jet.setAttribute("color","gray");
             jet.setAttribute("radius-bottom","1");
@@ -130,9 +138,9 @@ class Rocket{
             fire.setAttribute("color","orange");
             fire.setAttribute("radius-bottom","0.8");
             fire.setAttribute("radius-top","0");
-            fire.setAttribute("position","0 -9.5 0");
+            fire.setAttribute("position","0 -8.5 0");
             fire.setAttribute("opacity","0.7")
-            fire.setAttribute("rotaion","-180 0 0");
+            fire.setAttribute("rotation","-180 0 0");
             this.obj.append( fire );
 
             let fire2 = document.createElement("a-sphere");
@@ -148,8 +156,8 @@ class Rocket{
             fire3.setAttribute("radius-top","0");
             fire3.setAttribute("position","1 -6.5 1");
             fire3.setAttribute("opacity","0.7");
-            fire3.setAttribute("rotaion","-180 0 0");
-            fire5.setAttribute("height","4");
+            fire3.setAttribute("rotation","-180 0 0");
+            fire3.setAttribute("height","4");
             this.obj.append( fire3 );
 
             let fire4 = document.createElement("a-cone");
@@ -158,8 +166,8 @@ class Rocket{
             fire4.setAttribute("radius-top","0");
             fire4.setAttribute("position","-1 -6.5 -1");
             fire4.setAttribute("opacity","0.7");
-            fire4.setAttribute("rotaion","-180 0 0");
-            fire5.setAttribute("height","4");
+            fire4.setAttribute("rotation","-180 0 0");
+            fire4.setAttribute("height","4");
             this.obj.append( fire4 );
 
             let fire5 = document.createElement("a-cone");
@@ -168,7 +176,7 @@ class Rocket{
             fire5.setAttribute("radius-top","0");
             fire5.setAttribute("position","1 -6.5 -1");
             fire5.setAttribute("opacity","0.7");
-            fire5.setAttribute("rotaion","-180 0 0");
+            fire5.setAttribute("rotation","-180 0 0");
             fire5.setAttribute("height","4");
             this.obj.append( fire5 );
 
@@ -178,7 +186,7 @@ class Rocket{
             fire6.setAttribute("radius-top","0");
             fire6.setAttribute("position","-1 -6.5 1");
             fire6.setAttribute("opacity","0.7");
-            fire6.setAttribute("rotaion","-180 0 0");
+            fire6.setAttribute("rotation","-180 0 0");
             fire6.setAttribute("height","4");
             this.obj.append( fire6 );
    
